@@ -55,3 +55,8 @@ test-suite.log
 
 !doc/example/Makefile
 !src/testapp
+
+# Meson subprojects
+subprojects/packagecache/
+subprojects/**/
+!subprojects/packagefiles/

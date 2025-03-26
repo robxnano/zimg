@@ -1,0 +1,14 @@
+option('tests',
+       type: 'boolean',
+       value: false,
+       description: 'Compile unit tests (may result in slower code)')
+
+option('simd',
+       type: 'boolean',
+       value: true,
+       description: 'Enable SIMD code')
+
+option('stdlib',
+       type: 'string',
+       value: '',
+       description: 'C++ standard library for static linking (overrides automatic detection)')
