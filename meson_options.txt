@@ -1,0 +1,24 @@
+option('testapp',
+       type: 'boolean',
+       value: false,
+       description: 'Compile the test application')
+
+option('examples',
+       type: 'boolean',
+       value: false,
+       description: 'Compile example programs')
+
+option('unit_tests',
+       type: 'boolean',
+       value: false,
+       description: 'Compile unit tests (may result in slower code)')
+
+option('simd',
+       type: 'boolean',
+       value: true,
+       description: 'Enable SIMD code')
+
+option('stdlib',
+       type: 'string',
+       value: '',
+       description: 'C++ stdlib for static linking (overriding automatic detection)')

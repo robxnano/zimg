@@ -1,0 +1,19 @@
+testcommon_inc_dirs = include_directories('../testcommon')
+
+testapp_src = files(
+  'colorspaceapp.cpp',
+  'cpuinfoapp.cpp',
+  'depthapp.cpp',
+  'frame.cpp',
+  'graphapp.cpp',
+  'main.cpp',
+  'pair_filter.cpp',
+  'resizeapp.cpp',
+  'table.cpp',
+  'unresizeapp.cpp',
+  'utils.cpp',
+)
+
+testapp = executable('testapp', testapp_src,
+  link_with: [libtestcommon, zimg_libs],
+  include_directories: [inc_dirs, testcommon_inc_dirs])

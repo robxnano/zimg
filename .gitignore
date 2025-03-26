@@ -47,8 +47,10 @@ install-sh
 libtool
 ltmain.sh
 missing
-testapp
 test-driver
 test-suite.log
 
 !doc/example/Makefile
+
+subprojects/*/
+!subprojects/packagefiles/*
