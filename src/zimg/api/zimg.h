@@ -3,11 +3,11 @@
 
 #include <stddef.h>
 
-/* Support for ELF hidden visibility. DLL targets use export maps instead. */
-#if defined(_WIN32) || defined(__CYGWIN__)
-  #define ZIMG_VISIBILITY
-#elif defined(__GNUC__)
+/* Support for GNU hidden visibility. MSVC targets use export maps instead. */
+#if defined(__GNUC__)
   #define ZIMG_VISIBILITY __attribute__((visibility("default")))
+#elif defined(_WIN32) || defined(__CYGWIN__)
+  #define ZIMG_VISIBILITY
 #else
   #define ZIMG_VISIBILITY
 #endif
