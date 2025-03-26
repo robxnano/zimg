@@ -1,0 +1,22 @@
+# Copyright (C) 2025 Rob Hall
+# SPDX-License-Identifier: MIT
+
+option('unit_tests',
+       type: 'boolean',
+       value: false,
+       description: 'Compile unit tests (may result in slower code)')
+
+option('testapp',
+       type: 'boolean',
+       value: false,
+       description: 'Compile the test application')
+
+option('simd',
+       type: 'boolean',
+       value: true,
+       description: 'Enable SIMD code')
+
+option('stdlib',
+       type: 'string',
+       value: '',
+       description: 'C++ standard library for static linking (overrides automatic detection)')
