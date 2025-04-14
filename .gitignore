@@ -55,3 +55,9 @@ test-suite.log
 
 !doc/example/Makefile
 !src/testapp
+
+# CMake files.
+/build/
+/build-*/
+/out/
+CMakeSettings.json
